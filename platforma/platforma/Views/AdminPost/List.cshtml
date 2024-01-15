@@ -1,0 +1,45 @@
+﻿@model List<platforma.Models.Domain.PostAnimal>
+@{
+}
+<div class="bg-secondary bg-opacity-10 py-2">
+    <div class="container">
+        <h1>List of Posts</h1>
+    </div>
+</div>
+
+<div class="container py-5">
+    @if (Model != null && Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Heading</th>
+                    <th>Description</th>
+                    <th>Author</th>
+                    <th>Published Date</th>
+                    <th>Visible</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var post in Model)
+                {
+                    <tr>
+                        <td>@post.AnimalName</td>
+                        <td>@post.AnimalDescription</td>
+                        <td>@post.FeaturedImageUrl</td>
+                        <td>@post.PublishedDate</td>
+                        <td>@(post.Visible ? "Yes" : "No")</td>
+                        <td>
+                            <a asp-area="" asp-controller="AdminPost" asp-action="Edit" asp-route-id="@post.Id">Edit</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No posts found!</p>
+    }
+</div>

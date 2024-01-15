@@ -1,0 +1,23 @@
+﻿@model List<platforma.Models.Domain.PostAnimal>
+@{
+}
+<div class="container py-5">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var post in Model)
+        {
+            <div class="card mb-3">
+               
+                <div class="card-body">
+                    <h2 class="card-title">@post.AnimalName</h2>
+                    <p class="card-text">@post.AnimalDescription</p>
+                    <p class="card-text"><small class="text-muted">Published on: @post.PublishedDate.ToString("MMMM dd, yyyy")</small></p>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No posts found!</p>
+    }
+</div>

@@ -1,0 +1,71 @@
+﻿@model platforma.Models.ViewModels.EditAnimalRequest
+@{
+}
+<div class="bg-secondary bg-opacity-10 py-2">
+    <div class="container">
+        <h1>Edit Animal</h1>
+    </div>
+
+</div>
+
+<div class="container py-5">
+    @if (Model != null)
+    {
+        <form asp-controller="AddAnimal" asp-action="Edit" method="post">
+            <div class="mb-3">
+                <label class="form-label">Id</label>
+                <input type="text" id="Id" class="form-control" asp-for="Id" readonly />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" id="Name" class="form-control" asp-for="Name" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Species</label>
+                <input type="text" id="Species" class="form-control" asp-for="Species" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <textarea class="form-control" id="Description" asp-for="Description" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Color</label>
+                <input type="text" id="ImageUrl" class="form-control" asp-for="ImageUrl" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input type="number" id="Age" class="form-control" asp-for="Age" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Is Available For Adoption</label>
+                <select class="form-control" id="IsAvailableForAdoption" asp-for="IsAvailableForAdoption" required>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-control" id="Gender" asp-for="Gender" readonly>
+                    <option value="Male" readonly>Male</option>
+                    <option value="Female" readonly>Female</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">City</label>
+                <input type="text" id="City" class="form-control" asp-for="City" required />
+            </div>
+            <div class="d-flex">
+               
+                <button type="submit" class="btn btn-dark">Update</button>
+                <button type="submit" class="btn btn-danger ms-2" asp-area="" asp-controller="AddAnimal" asp-action="Delete">Delete</button>
+               
+            </div>
+        </form>
+    }
+    else
+    {
+        <p>Animal not found!</p>
+    }
+</div>

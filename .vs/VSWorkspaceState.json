@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\platforma",
+    "\\platforma\\platforma",
+    "\\platforma\\platforma\\Controllers",
+    "\\platforma\\platforma\\Migrations",
+    "\\platforma\\platforma\\Migrations\\AuthDb",
+    "\\platforma\\platforma\\Models",
+    "\\platforma\\platforma\\Models\\ViewModels",
+    "\\platforma\\platforma\\Views",
+    "\\platforma\\platforma\\Views\\AdminPost"
+  ],
+  "SelectedNode": "\\platforma\\platforma\\appsettings.json",
+  "PreviewInSolutionExplorer": false
+}

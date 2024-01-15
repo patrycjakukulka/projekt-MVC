@@ -1,0 +1,22 @@
+﻿@model platforma.Models.ViewModels.UserViewModel
+@{
+}
+
+
+<div class="container py-5">
+    <h2>Latest Posts</h2>
+    <ul>
+        @foreach (var post in Model.Posts)
+        {
+            <li>@post.AnimalName - @post.AnimalDescription</li>
+        }
+    </ul>
+
+    <h2>Available Animals</h2>
+    <ul>
+        @foreach (var animal in Model.Animals)
+        {
+            <li>@animal.Name - @animal.Description</li>
+        }
+    </ul>
+</div>

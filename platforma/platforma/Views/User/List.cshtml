@@ -1,0 +1,49 @@
+﻿@model List<platforma.Models.Domain.Animal>
+@{
+}
+
+
+<div class="bg-secondary bg-opacity-10 py-2">
+    <div class="container">
+        <h1>Show All Animals</h1>
+    </div>
+</div>
+
+<div class="container py-5">
+    @if (Model != null && Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Species</th>
+                    <th>Description</th>
+                   
+                    <th>Age</th>
+                    <th>Is Available For Adoption</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var animal in Model)
+                {
+                    <tr>
+                        <td>@animal.Name</td>
+                        <td>@animal.Species</td>
+                        <td>@animal.Description</td>
+                        
+                        <td>@animal.Age</td>
+                        <td>@(animal.IsAvailableForAdoption ? "Yes" : "No")</td>
+                        <td>@animal.Gender</td>
+                        <td>@animal.City</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No animals found!</p>
+    }
+</div>
