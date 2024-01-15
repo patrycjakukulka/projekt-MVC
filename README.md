@@ -24,7 +24,10 @@ a) Użytkownik Zalogowany:
     Po zalogowaniu się na konto administratora przy użyciu poniższych danych:
     Login: admin@platforma.com
     Hasło: admin@123
+
+
 b) Administrator posiada uprawnienia umożliwiające zarządzanie treściami na platformie. Ma możliwość:
+
     •Zarządzania Zwierzętami:
    - Dodawania nowych zwierząt do bazy danych.
    - Przeglądania listy istniejących zwierząt.
