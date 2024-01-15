@@ -15,7 +15,7 @@
 Użytkownik (anonimowy):
 Użytkownik bez konieczności logowania ma dostęp do listy postów, co pozwala mu zapoznać się z treściami i informacjami publikowanymi na platformie. Jednak aby uzyskać pełen zakres funkcji, takich jak przeglądanie listy dostępnych zwierząt, musi utworzyć konto i zalogować się.
 
-Użytkownik Zalogowany:
+a) Użytkownik Zalogowany:
     Po pomyślnym zalogowaniu się na platformę przy użyciu poniższych danych:
     Login: user24
     Hasło: !QAZ2wsx
@@ -24,21 +24,21 @@ Użytkownik Zalogowany:
     Po zalogowaniu się na konto administratora przy użyciu poniższych danych:
     Login: admin@platforma.com
     Hasło: admin@123
-Administrator posiada uprawnienia umożliwiające zarządzanie treściami na platformie. Ma możliwość:
-    •	Zarządzania Zwierzętami:
-        o	Dodawania nowych zwierząt do bazy danych.
-        o	Przeglądania listy istniejących zwierząt.
-        o	Edytowania danych zwierząt, w tym zmiany opisu, itp.
-        o	Usuwania zwierząt z bazy danych.
+b) Administrator posiada uprawnienia umożliwiające zarządzanie treściami na platformie. Ma możliwość:
+    •Zarządzania Zwierzętami:
+   - Dodawania nowych zwierząt do bazy danych.
+   - Przeglądania listy istniejących zwierząt.
+   - Edytowania danych zwierząt, w tym zmiany opisu, itp.
+   - Usuwania zwierząt z bazy danych.
 
-    •	Zarządzania Postami:
-        o	Dodawania nowych postów na platformę.
-        o	Przeglądania listy istniejących postów.
-        o	Edytowania treści, tytułu w postach.
-        o	Usuwania postów z platformy.
+    •Zarządzania Postami:
+    -Dodawania nowych postów na platformę.
+    - Przeglądania listy istniejących postów.
+    -  Edytowania treści, tytułu w postach.
+     - Usuwania postów z platformy.
 
-    •	Podglądu Strony z Perspektywy Użytkownika:
-        o	Przeglądania treści dostępnych dla użytkowników anonimowych.
-        o	Sprawdzania, jak platforma wygląda dla standardowego użytkownika.
+    •Podglądu Strony z Perspektywy Użytkownika:
+     - Przeglądania treści dostępnych dla użytkowników anonimowych.
+     - Sprawdzania, jak platforma wygląda dla standardowego użytkownika.
 
  
